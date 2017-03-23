@@ -14,7 +14,7 @@
 	<form action="information_page.php" method="POST">
 		<label>Username: </label>
 		<input type="text" name="txtUsername" placeholder="Username"><br>
-		<label>Passowrd: </label>
+		<label>Password: </label>
 		<input type="text" name="txtPassword" placeholder="Password"><br>
 		<input type="submit" name="btnSubmit" >
 	</form>
