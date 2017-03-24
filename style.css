@@ -1,0 +1,8 @@
+body {
+    width: 80%;
+    max-width: 300px;
+    margin: 20px auto;
+}
+.mybtn {
+    width: 100%;
+}
