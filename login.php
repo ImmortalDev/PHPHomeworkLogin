@@ -13,14 +13,7 @@
 <body>
     <div class="login-page">
         <div class="form">
-            <form class="register-form" action="information_page.php" method="post">
-                <input type="text" placeholder="name"/>
-                <input type="password" placeholder="password"/>
-                <input type="text" placeholder="email address"/>
-                <button>create</button>
-                <p class="message">Already registered? <a href="#">Sign In</a></p>
-            </form>
-            <form class="login-form">
+            <form class="login-form" action="information_page.php" method="post">
                 <input type="text" name="txtUsername" placeholder="username"/>
                 <input type="password" name="txtPassword" placeholder="password"/>
                 <button type="submit">login</button>
