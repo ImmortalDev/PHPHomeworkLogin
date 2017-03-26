@@ -11,7 +11,6 @@
 
 </head>
 <body>
-<<<<<<< Updated upstream
     <div class="login-page">
         <div class="form">
             <form class="register-form" action="information_page.php" method="post">
@@ -29,19 +28,6 @@
             </form>
         </div>
     </div>
-=======
-	<form action="infor
-	mation_page.php" method="POST">
-
-        <label>Username: </label>
-        <input class="form-control" type="text" name="txtUsername" placeholder="Username">
-		<br>
-		<label>Password: </label>
-		<input class="form-control" type="password" name="txtPassword" placeholder="Password"><br>
-		<input class="btn btn-primary mybtn" type="submit" name="btnSubmit" >
-
-	</form>
->>>>>>> Stashed changes
 
 </body>
 </html>
