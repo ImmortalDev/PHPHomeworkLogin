@@ -9,8 +9,6 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 
-
-
 </head>
 <body>
 	<form action="information_page.php" method="POST">

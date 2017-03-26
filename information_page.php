@@ -27,7 +27,12 @@
                 <h1>User</h1>
                 <h1>Password: <?php echo "$password"; ?></h1>
 
-            <?php } ?>
+            <?php }else{ ?>
+                <div class="alert alert-danger" role="alert">
+                    <p>Wrong user name password</p>
+                </div>
+
+            <?php }?>
         </div>
 
     </div>
