@@ -1,5 +1,6 @@
-
+<?php session_start() ?>
 <!DOCTYPE html>
+
 <html>
 <head>
 	<title>Login Page</title>
@@ -13,14 +14,36 @@
 <body>
     <div class="login-page">
         <div class="form">
-            <form class="login-form" action="information_page.php" method="post">
-                <input type="text" name="txtUsername" placeholder="username"/>
-                <input type="password" name="txtPassword" placeholder="password"/>
-                <button type="submit">login</button>
+            <form method="post" action=''>
+                 <input type="text" placeholder="User Name"  name="txtUsername" > <br>
+                <input type="password" placeholder="Password" name="txtPassword"> <br>
+                <input type="submit">
                 <p class="message">Not registered? <a href="#">Create an account</a></p>
             </form>
         </div>
     </div>
 
+    <?php
+
+    if (isset($_POST['txtUsername']) && $_POST['txtPassword']){
+        $username = $_POST['txtUsername'];
+        $password = $_POST['txtPassword'];
+
+        $userLoop = array("admin","vichit","prohos");
+        $passLoop = array("123", "123", "123");
+
+        for ($i =0; $i <count($userLoop); $i++) {
+            for ($j =0; $j <count($passLoop) ; $j++) {
+                if ($j == $i) {
+                    if ($username == $userLoop[$i] && $password == $passLoop[$j]) {
+                        $_SESSION['current_user'] = $username;
+                        header("location:information_page.php");
+
+                    }
+                }
+            }
+        }
+    }
+    ?>
 </body>
 </html>
